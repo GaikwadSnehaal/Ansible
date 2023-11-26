@@ -1,0 +1,8 @@
+- hosts: all
+  task:
+    -copy:
+      src: /etc/passwd
+      dest: /tmp
+      owner: ubuntu
+      group: ubuntu
+      mode: 777
